@@ -7,4 +7,4 @@ COPY ./ /home/app/
 RUN pip install -r requirements.txt
 ENV PYTHONPATH=${PYTHONPATH}:/home/app/
 
-CMD ["bash", "gunicorn main:app -b 0.0.0.0:5000"]
+CMD ["bash", "gunicorn main:app -b 0.0.0.0:7567"]
